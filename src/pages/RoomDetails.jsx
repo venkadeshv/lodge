@@ -156,7 +156,7 @@ const RoomDetails = () => {
                         <aside className="room-sidebar">
                             <div className="booking-card">
                                 <div className="booking-price">
-                                    <span className="price-amount">${room.price}</span>
+                                    <span className="price-amount">₹{room.price}</span>
                                     <span className="price-period">/ night</span>
                                 </div>
 
@@ -215,7 +215,7 @@ const RoomDetails = () => {
                                     <img src={similarRoom.images[0]} alt={similarRoom.name} />
                                     <div className="similar-info">
                                         <h3>{similarRoom.name}</h3>
-                                        <p className="similar-price">${similarRoom.price} / night</p>
+                                        <p className="similar-price">₹{similarRoom.price} / night</p>
                                     </div>
                                 </Link>
                             ))}

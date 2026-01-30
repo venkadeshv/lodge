@@ -95,7 +95,7 @@ const RoomCard = ({ room }) => {
 
                 <div className="room-card-footer">
                     <div className="room-card-price">
-                        <span className="room-card-price-amount">${room.price}</span>
+                        <span className="room-card-price-amount">₹{room.price}</span>
                         <span className="room-card-price-period">/ night</span>
                     </div>
                     <button className="btn btn-primary btn-small">View Details</button>

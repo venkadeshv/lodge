@@ -7,7 +7,7 @@ import './Rooms.css';
 const Rooms = () => {
     const [filteredRooms, setFilteredRooms] = useState(rooms);
     const [filters, setFilters] = useState({
-        priceRange: [0, 500],
+        priceRange: [0, 40000],
         type: 'all',
         amenities: []
     });
@@ -66,14 +66,14 @@ const Rooms = () => {
                                 <input
                                     type="range"
                                     min="0"
-                                    max="500"
+                                    max="40000"
                                     value={filters.priceRange[1]}
                                     onChange={(e) => handleFilterChange('priceRange', [0, parseInt(e.target.value)])}
                                     className="price-slider"
                                 />
                                 <div className="price-display">
-                                    <span>$0</span>
-                                    <span>${filters.priceRange[1]}</span>
+                                    <span>₹0</span>
+                                    <span>₹{filters.priceRange[1]}</span>
                                 </div>
                             </div>
                         </div>

@@ -233,16 +233,16 @@ const Booking = () => {
 
                             <div className="summary-pricing">
                                 <div className="summary-row">
-                                    <span>${room.price} × {nights} nights</span>
-                                    <span>${subtotal.toFixed(2)}</span>
+                                    <span>₹{room.price} × {nights} nights</span>
+                                    <span>₹{subtotal.toFixed(2)}</span>
                                 </div>
                                 <div className="summary-row">
                                     <span>Service fee</span>
-                                    <span>${serviceFee.toFixed(2)}</span>
+                                    <span>₹{serviceFee.toFixed(2)}</span>
                                 </div>
                                 <div className="summary-row total">
                                     <strong>Total</strong>
-                                    <strong>${total.toFixed(2)}</strong>
+                                    <strong>₹{total.toFixed(2)}</strong>
                                 </div>
                             </div>
                         </div>
